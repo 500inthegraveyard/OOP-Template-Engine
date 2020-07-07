@@ -8,14 +8,14 @@ class Employee {
     }
   
     getName(){
-        prompt("What is your name?")
+        window.prompt("What is your name?", "")
     }
     getid(){
-            prompt(`Your unique ID is ${this.id}`)
+            uniqid.time()
 
     }
     getemail(){
-        prompt("What is your email address?")
+        window.prompt("What is your email address?", "")
     }
     getRole(){
         return(this.getClass())
@@ -31,7 +31,7 @@ class Employee {
 
   class Manager extends Employee {
       constructor (name,id,email,officenumber){
-          super(name,id,email);
+          super(name,id,email,6);
           this.officenumber = officenumber;
       }
 
@@ -53,7 +53,7 @@ class Employee {
           this.githubusername = githubusername;
       }
       getGithub(){
-          return this.githubusername;
+          window.prompt("what is your gitHub username?", "")
       }
 
       getRole(){
@@ -74,7 +74,7 @@ class Employee {
         this.school = school;
       }
       getSchool(){
-          return this.school
+          window.prompt("What school did you go to?", "")
       }
 
       getRole(){
