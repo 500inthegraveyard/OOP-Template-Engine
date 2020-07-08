@@ -3,24 +3,27 @@
 
 
 class Employee {
-    constructor(name, id, email,) {
+    constructor(name, id, email, role) {
       this.name = name;
       this.id = id;
       this.email = email;
+      this.role = role;
+  
+      
     }
   
     getName(){
         return this.name
     }
-    getid(){
-            // uniqid.time()
+    getId(){
+          return this.id
 
     }
-    getemail(){
-        window.prompt("What is your email address?", "")
+    getEmail(){
+        return this.email
     }
     getRole(){
-        return(this.getClass())
+        return "Employee"
     }
 
   
